@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">My Application2</string>
+    <string name="txt_titulo">APLICATIVO MELHORES FUNCIONÁRIOS DO ANO</string>
+    <string name="txt_hint_first_name">First Name</string>
+    <string name="txt_hint_edit_priemeironome">Last Name</string>
+    <string name="txt_hint_ultimonome">First Name</string>
+    <string name="txt_hint_desiredjob">Desired Job Title</string>
+    <string name="txt_hint_edit_tell">Call lNumber</string>
+    <string name="txt_button_clean">Clean</string>
+    <string name="txt_button_salve">Salve</string>
+    <string name="txt_button_fianalize">Finalize</string>
+
+
+
 </resources>
