@@ -1,8 +1,10 @@
-package com.seraffim.myapplication2;
+package com.seraffim.myapplication2.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.seraffim.myapplication2.R;
 
 public class MainActivity extends AppCompatActivity {
 
