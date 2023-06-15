@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     Classtest6 classtest6;
 
-    Classtest7 classtest7
+    Classtest7 classtest7;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
