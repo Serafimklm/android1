@@ -5,13 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.seraffim.myapplication2.R;
-import com.seraffim.myapplication2.model.ClassTest2;
 import com.seraffim.myapplication2.model.Classtest;
-import com.seraffim.myapplication2.model.Classtest3;
-import com.seraffim.myapplication2.model.Classtest4;
-import com.seraffim.myapplication2.model.Classtest5;
-import com.seraffim.myapplication2.model.Classtest6;
-import com.seraffim.myapplication2.model.Classtest7;
 import com.seraffim.myapplication2.model.Person;
 
 public class MainActivity extends AppCompatActivity {
