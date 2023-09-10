@@ -12,9 +12,13 @@ import com.seraffim.myapplication2.model.Curso;
 public class MainActivity extends AppCompatActivity {
 
     Person person;
+
     // acima esta usando person, que é a calsse pessoa e objeto pessoa.
     Classtest classtest;
     Curso curso;
+
+    String dadosPessoa; // pascalCaSE - camelCase
+    String dadosOutraPessoa;
 
 
     @Override
@@ -25,13 +29,19 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
         person = new Person();
 
         person.getFirstName("joao");
         person.getLastName("serafim");
         person.getDesiredJob("android develloper");
         person.getPhoneNumber("31231223");
+
+        person = new Person();
+
+        person.setDesiredJob("software engenier");
+        person.setFirstName("joao vitor");
+        person.setLastName("serafim");
+        person.setPhoneNumber("7600949234");
 
         int parada = 0;
 

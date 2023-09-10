@@ -1,7 +1,7 @@
 package com.seraffim.myapplication2.model;
 
 public class Person {
-    //construtor = pessoa
+    //para constuir um objeto é necessário have um construtor = pessoa
     // atributos = objetos - model - template
     // metodos de acesso sao getss and sets
 
