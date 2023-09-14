@@ -18,6 +18,47 @@ public class MainActivity extends AppCompatActivity {
     Curso curso;
 
     String dadosPessoa; // pascalCaSE - camelCase
+
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
+    }
+
+    public Classtest getClasstest() {
+        return classtest;
+    }
+
+    public void setClasstest(Classtest classtest) {
+        this.classtest = classtest;
+    }
+
+    public Curso getCurso() {
+        return curso;
+    }
+
+    public void setCurso(Curso curso) {
+        this.curso = curso;
+    }
+
+    public String getDadosPessoa() {
+        return dadosPessoa;
+    }
+
+    public void setDadosPessoa(String dadosPessoa) {
+        this.dadosPessoa = dadosPessoa;
+    }
+
+    public String getDadosOutraPessoa() {
+        return dadosOutraPessoa;
+    }
+
+    public void setDadosOutraPessoa(String dadosOutraPessoa) {
+        this.dadosOutraPessoa = dadosOutraPessoa;
+    }
+
     String dadosOutraPessoa;
 
 
@@ -43,7 +84,14 @@ public class MainActivity extends AppCompatActivity {
         person.setLastName("serafim");
         person.setPhoneNumber("7600949234");
 
-        int parada = 0;
+        dadosOutraPessoa += "First name:";
+        dadosOutraPessoa = person.getFirstName();
+        dadosOutraPessoa += "Desired Job:";
+        dadosOutraPessoa = person.getDesiredJob();
+        dadosOutraPessoa += "Last Name:";
+        dadosOutraPessoa = person.getLastName();
+        dadosOutraPessoa += "phone number:";
+        dadosOutraPessoa = person.getPhoneNumber();
 
         /// agora vamos criar os get da outras duas classes de exemplo
 
@@ -54,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         classtest.getMelhoresdoano("Adelaide");
         classtest.getPioresAlunosDoAno("marco");
 
-        int stop = 0;
+
 
         // agora vamos fazer como exemplo dos melhores em determinadas linguagems de programacao //
 

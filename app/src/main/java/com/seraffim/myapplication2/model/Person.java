@@ -47,4 +47,26 @@ public class Person {
 
     public void getFirstName(String joao) {
     }
+
+    public String getDesiredJob() {
+        return null;
+    }
+
+    public String getLastName() {
+        return null;
+    }
+
+    public String getPhoneNumber() {
+        return null;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", desiredJob='" + desiredJob + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                '}';
+    }
 }
