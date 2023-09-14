@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         dadosOutraPessoa += "phone number:";
         dadosOutraPessoa = person.getPhoneNumber();
 
-        /// agora vamos criar os get da outras duas classes de exemplo
+        /// agora vamos criar os get da outras duas classes de exempl
 
         classtest = new Classtest();
 
