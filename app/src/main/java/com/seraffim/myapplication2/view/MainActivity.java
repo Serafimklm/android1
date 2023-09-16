@@ -3,6 +3,7 @@ package com.seraffim.myapplication2.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import com.seraffim.myapplication2.R;
 import com.seraffim.myapplication2.model.Classtest;
@@ -61,6 +62,21 @@ public class MainActivity extends AppCompatActivity {
 
     String dadosOutraPessoa;
 
+    @Override
+    public String toString() {
+        return "MainActivity{" +
+                "person=" + person +
+                ", classtest=" + classtest +
+                ", curso=" + curso +
+                ", dadosPessoa='" + dadosPessoa + '\'' +
+                ", dadosOutraPessoa='" + dadosOutraPessoa + '\'' +
+                '}';
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+        super.onPointerCaptureChanged(hasCapture);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,15 +100,9 @@ public class MainActivity extends AppCompatActivity {
         person.setLastName("serafim");
         person.setPhoneNumber("7600949234");
 
-        dadosOutraPessoa += "First name:";
-        dadosOutraPessoa = person.getFirstName();
-        dadosOutraPessoa += "Desired Job:";
-        dadosOutraPessoa = person.getDesiredJob();
-        dadosOutraPessoa += "Last Name:";
-        dadosOutraPessoa = person.getLastName();
-        dadosOutraPessoa += "phone number:";
-        dadosOutraPessoa = person.getPhoneNumber();
 
+
+        Log.i("poo android", person.toString());
         /// agora vamos criar os get da outras duas classes de exempl
 
         classtest = new Classtest();
@@ -123,4 +133,7 @@ public class MainActivity extends AppCompatActivity {
         //todas as classtest podem ser excluidas, foram usadas apenas para um teste
 
        }
-}
+
+    private String dadosOutraPessoa() {
+        return null;
+    } }
