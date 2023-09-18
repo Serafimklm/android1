@@ -4,9 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.EditText;
-import android.widget.Toast;
 
 import com.seraffim.myapplication2.R;
 import com.seraffim.myapplication2.model.Classtest;
@@ -22,18 +19,6 @@ public class MainActivity extends AppCompatActivity {
     Curso curso;
 
     String dadosPessoa; // pascalCaSE - camelCase
-
-    EditText editTtxname;
-    EditText editTxt2;
-    EditText editTxt3;
-    EditText editTxt4;
-
-    View button;
-    View button2;
-    View button3;
-
-
-
 
     public Person getPerson() {
         return person;
@@ -141,60 +126,13 @@ public class MainActivity extends AppCompatActivity {
         curso.getMelhorEmFlutter("carlos");
         curso.getMelhorEmPhyton("luiz");
 
-        editTtxname = findViewById(R.id.editTtxname);
-        editTxt2 = findViewById(R.id.editTxt2);
-        editTxt3 = findViewById(R.id.editTxt3);
-        editTxt4 = findViewById(R.id.editTxt4);
-
-        button = findViewById(R.id.button);
-        button2 = findViewById(R.id.button2);
-        button3 = findViewById(R.id.button3);
+        // viu como é facil, basta criar uma private string la na model e gerar get and set, poster-
+        //ormente pode vir para mainactiviry java e cirar o get ou set, no caso acima, claro, get.v
 
 
+        //todas as classtest podem ser excluidas, foram usadas apenas para um teste
 
-        editTtxname.setText(person.getFirstName());
-        editTxt2.setText(person.getLastName());
-        editTxt3.setText(person.getPhoneNumber());
-        editTxt4.setText(person.getDesiredJob());
-
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-           editTtxname.setText("");
-           editTxt2.setText("");
-           editTxt3.setText("");
-           editTxt4.setText("");
-
-            }
-        });
-
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "dados salvos e enviados, obrigado", Toast.LENGTH_SHORT).show();
-                finish();
-
-            }
-        });
-         button3.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View view) {
-                 Toast.makeText(MainActivity.this, "inscrição finalizada", Toast.LENGTH_SHORT).show();
-                 finish();
-             }
-         });
-
-
-                // viu como é facil, basta criar uma private string la na model e gerar get and set, poster-
-                //ormente pode vir para mainactiviry java e cirar o get ou set, no caso acima, claro, get.v
-
-
-                //todas as classtest podem ser excluidas, foram usadas apenas para um teste
-
-                ;
-    }
-    ;
+       }
 
     private String dadosOutraPessoa() {
         return null;
